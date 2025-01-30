@@ -1,0 +1,44 @@
+This Python script trains a neural network using the Wine dataset from sklearn.datasets. The model is built using TensorFlow/Keras and follows a supervised learning approach for multi-class classification.
+
+1. Importing Required Libraries
+
+numpy: For numerical operations.
+tensorflow & keras: To build and train the neural network.
+sklearn.datasets: Loads the Wine dataset.
+sklearn.model_selection: Splits the dataset into training and testing sets.
+sklearn.preprocessing: Standardizes features and encodes labels.
+
+2. Loading the Dataset
+
+The Wine dataset is loaded using load_wine(), where:
+X contains numerical features of different wine samples.
+y contains integer labels representing different wine classes.
+
+3. Preprocessing the Data
+
+One-Hot Encoding: Converts categorical target values into a binary matrix format.
+Splitting the Dataset: train_test_split() divides the data into 80% training and 20% testing.
+Feature Scaling: StandardScaler() normalizes feature values for better performance.
+
+4. Defining the Neural Network
+
+The model is a feedforward neural network with three layers:
+First layer: 16 neurons, ReLU activation, input shape = number of features.
+Second layer: 8 neurons, ReLU activation.
+Output layer: Number of classes neurons, Softmax activation (for multi-class classification).
+
+5. Compiling the Model
+
+Optimizer: Adam (adaptive learning rate optimization).
+Loss Function: Categorical Crossentropy (suitable for multi-class classification).
+Metric: Accuracy (to measure classification performance).
+
+6. Training the Model
+
+The model is trained for 50 epochs with a batch size of 8.
+Uses validation data to track performance on unseen data.
+
+7. Evaluating the Model
+
+After training, the model is tested on the test set.
+The final test accuracy is printed.
