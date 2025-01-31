@@ -1,0 +1,40 @@
+Here is a detailed description and steps for the Hebbian Neural Network project with a finance dataset:
+
+Description
+
+This project involves training a Hebbian Neural Network to predict the closing price of Apple (AAPL) stock based on historical data. The project uses a finance dataset from Yahoo Finance, which includes the opening price, highest price, lowest price, trading volume, and closing price for each trading day.
+
+Steps
+
+Step 1: Import Libraries and Load Data
+
+- Import necessary libraries: NumPy, Pandas, yfinance, and scikit-learn.
+- Load the historical stock prices of Apple (AAPL) from Yahoo Finance using the yfinance library.
+
+Step 2: Preprocess Data
+
+- Select relevant features: opening price, highest price, lowest price, and trading volume.
+- Scale the data using Min-Max Scaler to improve the performance of the neural network.
+
+Step 3: Define Hebbian Neural Network Architecture
+
+- Define the Hebbian Neural Network class with the following methods:
+    - __init__: Initializes the network with random weights and learning rate.
+    - forward: Performs the forward pass through the network.
+    - hebbian_update: Updates the weights using the Hebbian learning rule.
+    - train: Trains the network using the given dataset.
+
+Step 4: Train the Hebbian Neural Network
+
+- Create an instance of the Hebbian Neural Network class with the desired input size, output size, and learning rate.
+- Train the network using the preprocessed data and the train method.
+
+Step 5: Evaluate the Performance of the Network
+
+- Evaluate the performance of the network using metrics such as mean squared error (MSE) or mean absolute error (MAE).
+- Visualize the predicted closing prices against the actual closing prices to assess the accuracy of the network.
+
+Step 6: Refine the Network (Optional)
+
+- Refine the network by adjusting the learning rate, number of epochs, or other hyperparameters to improve its performance.
+- Experiment with different architectures or techniques, such as adding more layers or using different activation functions.
